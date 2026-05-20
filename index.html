@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FIKSPOINT DEALERSHIP - Browse, buy, and service your perfect vehicle.">
+  <title>FIKSPOINT DEALERSHIP | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="home">
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <span class="brand-mark">FP</span>
+        <span class="brand-font">FIKSPOINT DEALERSHIP</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" data-nav="home" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="listings" href="listings.html">Cars</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="booking" href="service-booking.html">Service Booking</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="about" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="contact" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="login" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="btn btn-sm btn-brand ms-lg-2" href="checkout.html">Purchase</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <main class="container pb-5">
+    <section class="hero p-4 p-lg-5">
+      <div class="hero-content">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-7">
+            <p class="small-label text-light mb-2 fade-up">Trusted Since 2012</p>
+            <h1 class="hero-title mb-3 fade-up delay-1">Find Your Perfect Car Today</h1>
+            <p class="hero-subtitle mb-4 fade-up delay-2">FIKSPOINT helps you browse, compare, purchase, and maintain vehicles from one secure platform. Explore brand-new and pre-owned models built for your lifestyle.</p>
+            <div class="d-flex gap-2 flex-wrap fade-up delay-3">
+              <a href="listings.html" class="btn btn-brand btn-lg">Browse Cars</a>
+              <a href="service-booking.html" class="btn btn-outline-light btn-lg">Book a Service</a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="search-panel p-3 p-lg-4">
+              <h2 class="h5 text-dark mb-3">Quick Car Search</h2>
+              <form id="homeSearchForm" class="row g-3">
+                <div class="col-12">
+                  <label for="searchBrand" class="form-label">Brand</label>
+                  <select id="searchBrand" class="form-select">
+                    <option value="">Any brand</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Hyundai">Hyundai</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="searchModel" class="form-label">Model</label>
+                  <input type="text" id="searchModel" class="form-control" placeholder="e.g., Corolla, Ranger, Q5">
+                </div>
+                <div class="col-12">
+                  <label for="searchPrice" class="form-label">Max Price (BWP)</label>
+                  <input type="number" id="searchPrice" class="form-control" min="50000" step="5000" placeholder="e.g., 500000">
+                </div>
+                <div class="col-12 d-grid">
+                  <button type="submit" class="btn btn-brand">Search Vehicles</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-5">
+      <div class="d-flex justify-content-between align-items-end flex-wrap gap-2 mb-3">
+        <div>
+          <p class="small-label mb-1">Featured Inventory</p>
+          <h2 class="section-title mb-0">Top Cars This Week</h2>
+        </div>
+        <a class="btn btn-outline-brand" href="listings.html">View Full Listings</a>
+      </div>
+      <div class="row g-4" id="featuredCars"></div>
+    </section>
+
+    <section class="promo-banner my-5">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-8">
+          <p class="small-label text-warning mb-1">Special Promotion</p>
+          <h2 class="brand-font">Drive Away With Flexible Finance</h2>
+          <p class="mb-0">Get up to 20% deposit support, instant trade-in valuation, and free first service on selected vehicles this month.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a href="contact.html" class="btn btn-light btn-lg">Speak to Sales</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="row g-4 my-5">
+      <div class="col-lg-7">
+        <div class="glass-panel p-4 h-100">
+          <p class="small-label mb-1">About FIKSPOINT</p>
+          <h2 class="section-title">Advertise, Purchase, and Service in One Place</h2>
+          <p>We serve drivers across Botswana and beyond with trusted vehicle listings, transparent pricing, and a complete service booking platform. Customers can compare options, request test drives, and submit purchase details from anywhere.</p>
+          <div class="row g-3 mt-1">
+            <div class="col-md-6">
+              <div class="d-flex gap-3 align-items-start">
+                <span class="icon-pill"><i class="bi bi-speedometer2"></i></span>
+                <div>
+                  <h3 class="h6 mb-1">Fast Inquiries</h3>
+                  <p class="small text-muted mb-0">Quick response on prices, availability, and test drives.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex gap-3 align-items-start">
+                <span class="icon-pill"><i class="bi bi-tools"></i></span>
+                <div>
+                  <h3 class="h6 mb-1">Service Booking</h3>
+                  <p class="small text-muted mb-0">Book maintenance and upgrades with your preferred date.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="about.html" class="btn btn-outline-primary mt-4">Learn More About Us</a>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="glass-panel p-4 h-100">
+          <p class="small-label mb-1">Need Help?</p>
+          <h2 class="section-title">Request a Test Drive</h2>
+          <p>Let our team schedule a test drive and financing discussion that fits your budget and timeline.</p>
+          <a href="contact.html" class="btn btn-brand w-100 mb-2">Book Test Drive</a>
+          <a href="login.html" class="btn btn-outline-brand w-100">Customer Login</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer py-4">
+    <div class="container">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-6">
+          <p class="mb-1 fw-semibold">FIKSPOINT DEALERSHIP</p>
+          <p class="mb-0 small">Plot 1208, Gaborone, Botswana | +267 390 5512 | sales@fikspoint.co.bw</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="index.html" class="me-3">Home</a>
+          <a href="listings.html" class="me-3">Cars</a>
+          <a href="service-booking.html" class="me-3">Bookings</a>
+          <a href="contact.html" class="me-3">Contact</a>
+          <span class="small d-block d-md-inline mt-2 mt-md-0">&copy; <span data-current-year></span> FIKSPOINT</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

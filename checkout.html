@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Complete your FIKSPOINT vehicle purchase request.">
+  <title>FIKSPOINT DEALERSHIP | Checkout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="checkout">
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <span class="brand-mark">FP</span>
+        <span class="brand-font">FIKSPOINT DEALERSHIP</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" data-nav="home" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="listings" href="listings.html">Cars</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="booking" href="service-booking.html">Service Booking</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="about" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="contact" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="login" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="btn btn-sm btn-brand ms-lg-2" href="checkout.html">Purchase</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4 py-lg-5">
+    <section class="page-hero p-4 p-lg-5 mb-4">
+      <p class="small-label text-light mb-1">Purchase Request</p>
+      <h1 class="brand-font mb-2">Checkout</h1>
+      <p class="mb-0 text-light">Review selected cars and submit your purchase details. Our team will contact you to finalize payment and delivery options.</p>
+    </section>
+
+    <section class="row g-4">
+      <div class="col-lg-5">
+        <div class="glass-panel p-4">
+          <h2 class="h5 mb-3">Selected Vehicles</h2>
+          <div id="checkoutSummary"></div>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="glass-panel p-4">
+          <h2 class="h5 mb-3">Buyer Information</h2>
+          <div id="checkoutMessage" class="alert d-none" role="alert"></div>
+          <form id="checkoutForm" class="row g-3">
+            <div class="col-md-6">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input id="fullName" name="fullName" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" name="email" type="email" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input id="phone" name="phone" type="tel" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label for="idNumber" class="form-label">National ID / Passport</label>
+              <input id="idNumber" name="idNumber" class="form-control" required>
+            </div>
+            <div class="col-12">
+              <label for="deliveryAddress" class="form-label">Address</label>
+              <input id="deliveryAddress" name="deliveryAddress" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label for="paymentMethod" class="form-label">Payment Method</label>
+              <select id="paymentMethod" name="paymentMethod" class="form-select" required>
+                <option value="">Select method</option>
+                <option value="Bank transfer">Bank transfer</option>
+                <option value="Vehicle finance">Vehicle finance</option>
+                <option value="Card payment">Card payment</option>
+                <option value="Cash deposit">Cash deposit</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="deliveryOption" class="form-label">Delivery Option</label>
+              <select id="deliveryOption" name="deliveryOption" class="form-select" required>
+                <option value="">Select option</option>
+                <option value="Dealership pickup">Dealership pickup</option>
+                <option value="Home delivery">Home delivery</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label for="purchaseNotes" class="form-label">Additional Notes</label>
+              <textarea id="purchaseNotes" name="purchaseNotes" rows="3" class="form-control" placeholder="Any special request or preferred contact time"></textarea>
+            </div>
+            <div class="col-12 d-grid d-md-flex gap-2">
+              <button type="submit" class="btn btn-brand">Submit Purchase Request</button>
+              <a href="listings.html" class="btn btn-outline-secondary">Add More Cars</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer py-4">
+    <div class="container d-flex justify-content-between flex-wrap gap-2">
+      <p class="mb-0">Secure handling of customer information and order requests.</p>
+      <p class="mb-0 small">&copy; <span data-current-year></span> FIKSPOINT DEALERSHIP</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

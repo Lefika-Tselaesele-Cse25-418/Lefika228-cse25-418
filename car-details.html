@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Detailed vehicle specifications and inquiry form.">
+  <title>FIKSPOINT DEALERSHIP | Car Details</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="listings">
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <span class="brand-mark">FP</span>
+        <span class="brand-font">FIKSPOINT DEALERSHIP</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" data-nav="home" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="listings" href="listings.html">Cars</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="booking" href="service-booking.html">Service Booking</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="about" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="contact" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="login" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="btn btn-sm btn-brand ms-lg-2" href="checkout.html">Purchase</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4 py-lg-5" id="carDetailsSection">
+    <section class="page-hero p-4 p-lg-5 mb-4">
+      <p class="small-label text-light mb-1">Vehicle Details</p>
+      <h1 id="detailTitle" class="brand-font mb-2">Vehicle Name</h1>
+      <div class="d-flex flex-wrap align-items-center gap-3">
+        <span id="detailAvailability" class="badge px-3 py-2">In Stock</span>
+        <p id="detailPrice" class="h4 mb-0">BWP 0</p>
+      </div>
+    </section>
+
+    <section class="row g-4 mb-4">
+      <div class="col-lg-7">
+        <img id="detailImage" class="detail-image" src="" alt="Vehicle photo">
+      </div>
+      <div class="col-lg-5">
+        <div class="glass-panel p-4 h-100">
+          <p class="small-label mb-1">Description</p>
+          <p id="detailDescription" class="mb-4"></p>
+          <div class="d-grid gap-2 mb-3">
+            <button id="detailsBuyBtn" class="btn btn-brand" type="button">Purchase This Car</button>
+            <a class="btn btn-outline-brand" href="service-booking.html">Book Service</a>
+            <a class="btn btn-outline-secondary" href="listings.html">Back to Listings</a>
+          </div>
+          <p class="small text-muted mb-0">All prices and availability are confirmed by the sales team before final processing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="row g-4 mb-4">
+      <div class="col-lg-6">
+        <div class="glass-panel p-4 h-100">
+          <h2 class="h5 mb-3">Vehicle Specifications</h2>
+          <ul id="detailSpecs" class="list-group list-group-flush"></ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="glass-panel p-4 h-100">
+          <h2 class="h5 mb-3">Features Included</h2>
+          <ul id="detailFeatures" class="mb-0"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="glass-panel p-4">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <p class="small-label mb-1">Need More Information?</p>
+          <h2 class="section-title">Send an Inquiry</h2>
+          <p class="text-muted">Ask about financing, trade-in valuation, availability, or arrange a same-day test drive.</p>
+        </div>
+        <div class="col-lg-6">
+          <div id="detailMessage" class="alert d-none" role="alert"></div>
+          <form id="detailInquiryForm" class="row g-3">
+            <div class="col-12">
+              <label class="form-label" for="inquiryName">Full Name</label>
+              <input id="inquiryName" name="name" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="inquiryEmail">Email</label>
+              <input id="inquiryEmail" name="email" type="email" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="inquiryPhone">Phone</label>
+              <input id="inquiryPhone" name="phone" type="tel" class="form-control" required>
+            </div>
+            <div class="col-12">
+              <label class="form-label" for="inquiryMessage">Message</label>
+              <textarea id="inquiryMessage" name="message" class="form-control" rows="4" placeholder="I would like more details about this vehicle."></textarea>
+            </div>
+            <div class="col-12 d-grid">
+              <button type="submit" class="btn btn-brand">Submit Inquiry</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer py-4">
+    <div class="container">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-7">
+          <p class="mb-0">FIKSPOINT DEALERSHIP | Detailed listings for informed purchase decisions.</p>
+        </div>
+        <div class="col-md-5 text-md-end">
+          <a href="contact.html" class="me-3">Contact</a>
+          <a href="checkout.html" class="me-3">Checkout</a>
+          <span class="small">&copy; <span data-current-year></span> FIKSPOINT</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

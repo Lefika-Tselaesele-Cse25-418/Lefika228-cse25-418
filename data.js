@@ -12,7 +12,7 @@ window.FIKSPOINT_CARS = [
     condition: 'Used',
     availability: 'In Stock',
     color: 'Pearl White',
-    image: 'https://vogueauto.co.za/en/toyota-corolla-cross-used-for-sale-in-sandton-gauteng-Ffyezh.html',
+    image: 'https://vehicle.img.dealerlink.co.za/320x,q85/vehicle/1VmLod/Ffyezh/63db7f83d193c1.13371368.jpg',
     description: 'Reliable compact sedan with modern safety features, fuel efficiency, and a premium interior.',
     features: [
       'Adaptive cruise control',

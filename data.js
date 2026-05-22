@@ -1,10 +1,5 @@
 window.FIKSPOINT_CARS = [
   {
-   
-    ]
-  },
-
-  {
     id: 'fx-002',
     name: 'BMW 320i M Sport',
     brand: 'BMW',

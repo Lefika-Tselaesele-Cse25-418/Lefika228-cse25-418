@@ -46,7 +46,7 @@ window.FIKSPOINT_CARS = [
     condition: 'Used',
     availability: 'In Stock',
     color: 'Desert Orange',
-    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://www.rampagevehicles.co.uk/range/ford-ranger/',
     description: 'Powerful and practical double-cab built for business and weekend adventure.',
     features: ['4x4 drive', 'Tow assist', 'Terrain modes', '360 camera']
   },

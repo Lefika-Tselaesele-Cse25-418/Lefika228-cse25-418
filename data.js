@@ -12,10 +12,16 @@ window.FIKSPOINT_CARS = [
     condition: 'Used',
     availability: 'In Stock',
     color: 'Pearl White',
-    image: 'https://vogueauto.co.za/en/toyota-corolla-cross-used-for-sale-in-sandton-gauteng-Ffyezh.html',
+    image: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80',
     description: 'Reliable compact sedan with modern safety features, fuel efficiency, and a premium interior.',
-    features: ['Adaptive cruise control', 'Reverse camera', 'Lane assist', 'Apple CarPlay']
+    features: [
+      'Adaptive cruise control',
+      'Reverse camera',
+      'Lane assist',
+      'Apple CarPlay'
+    ]
   },
+
   {
     id: 'fx-002',
     name: 'BMW 320i M Sport',
@@ -31,8 +37,14 @@ window.FIKSPOINT_CARS = [
     color: 'Alpine Blue',
     image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1200&q=80',
     description: 'Sporty performance sedan with luxury cabin finish and driver-focused controls.',
-    features: ['M Sport package', 'Heated leather seats', 'Parking assist', 'Digital cockpit']
+    features: [
+      'M Sport package',
+      'Heated leather seats',
+      'Parking assist',
+      'Digital cockpit'
+    ]
   },
+
   {
     id: 'fx-003',
     name: 'Ford Ranger Wildtrak',
@@ -46,10 +58,16 @@ window.FIKSPOINT_CARS = [
     condition: 'Used',
     availability: 'In Stock',
     color: 'Desert Orange',
-    image: 'https://www.rampagevehicles.co.uk/range/ford-ranger/',
+    image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1200&q=80',
     description: 'Powerful and practical double-cab built for business and weekend adventure.',
-    features: ['4x4 drive', 'Tow assist', 'Terrain modes', '360 camera']
+    features: [
+      '4x4 drive',
+      'Tow assist',
+      'Terrain modes',
+      '360 camera'
+    ]
   },
+
   {
     id: 'fx-004',
     name: 'Mercedes-Benz C200 AMG Line',
@@ -65,8 +83,14 @@ window.FIKSPOINT_CARS = [
     color: 'Obsidian Black',
     image: 'https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1200&q=80',
     description: 'Executive sedan blending comfort, efficiency, and premium driving technology.',
-    features: ['Panoramic roof', 'Ambient lighting', 'Blind spot monitor', 'Wireless charging']
+    features: [
+      'Panoramic roof',
+      'Ambient lighting',
+      'Blind spot monitor',
+      'Wireless charging'
+    ]
   },
+
   {
     id: 'fx-005',
     name: 'Nissan X-Trail 2.5 Acenta',
@@ -82,8 +106,14 @@ window.FIKSPOINT_CARS = [
     color: 'Silver',
     image: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80',
     description: 'Family-friendly SUV with flexible seating, cargo space, and smooth highway handling.',
-    features: ['7-seat flexibility', 'Dual-zone climate control', 'Parking sensors', 'Hill start assist']
+    features: [
+      '7-seat flexibility',
+      'Dual-zone climate control',
+      'Parking sensors',
+      'Hill start assist'
+    ]
   },
+
   {
     id: 'fx-006',
     name: 'Volkswagen Polo Vivo GT',
@@ -99,8 +129,14 @@ window.FIKSPOINT_CARS = [
     color: 'Deep Red',
     image: 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=80',
     description: 'Affordable city hatchback with modern design and low running costs.',
-    features: ['Touchscreen infotainment', 'ABS brakes', 'Bluetooth audio', 'USB charging']
+    features: [
+      'Touchscreen infotainment',
+      'ABS brakes',
+      'Bluetooth audio',
+      'USB charging'
+    ]
   },
+
   {
     id: 'fx-007',
     name: 'Audi Q5 40 TDI Quattro',
@@ -116,8 +152,14 @@ window.FIKSPOINT_CARS = [
     color: 'Mythos Grey',
     image: 'https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=1200&q=80',
     description: 'Premium SUV with quattro traction, advanced infotainment, and refined comfort.',
-    features: ['Quattro AWD', 'Virtual cockpit', 'Drive select modes', 'LED matrix lights']
+    features: [
+      'Quattro AWD',
+      'Virtual cockpit',
+      'Drive select modes',
+      'LED matrix lights'
+    ]
   },
+
   {
     id: 'fx-008',
     name: 'Hyundai Tucson 2.0 Premium',
@@ -133,6 +175,11 @@ window.FIKSPOINT_CARS = [
     color: 'Moonlight Blue',
     image: 'https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=1200&q=80',
     description: 'Modern SUV offering comfort, safety technology, and efficient daily driving.',
-    features: ['Smart cruise control', 'Wireless Apple CarPlay', 'Rear camera', 'Multiple airbags']
+    features: [
+      'Smart cruise control',
+      'Wireless Apple CarPlay',
+      'Rear camera',
+      'Multiple airbags'
+    ]
   }
 ];

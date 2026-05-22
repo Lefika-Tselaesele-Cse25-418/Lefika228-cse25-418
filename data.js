@@ -1,24 +1,6 @@
 window.FIKSPOINT_CARS = [
   {
-    id: 'fx-001',
-    name: 'Toyota Corolla 1.8 XR',
-    brand: 'Toyota',
-    model: 'Corolla',
-    year: 2024,
-    price: 349000,
-    mileage: 12000,
-    fuel: 'Petrol',
-    transmission: 'Automatic',
-    condition: 'Used',
-    availability: 'In Stock',
-    color: 'Pearl White',
-    image: 'https://www.toyota.com/corolla/',
-    description: 'Reliable compact sedan with modern safety features, fuel efficiency, and a premium interior.',
-    features: [
-      'Adaptive cruise control',
-      'Reverse camera',
-      'Lane assist',
-      'Apple CarPlay'
+   
     ]
   },
 

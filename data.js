@@ -135,5 +135,5 @@ window.FIKSPOINT_CARS = [
       'Drive select modes',
       'LED matrix lights'
     ]
-  },
+  }
 ];

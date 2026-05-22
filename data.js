@@ -136,27 +136,4 @@ window.FIKSPOINT_CARS = [
       'LED matrix lights'
     ]
   },
-
-  {
-    id: 'fx-008',
-    name: 'Hyundai Tucson 2.0 Premium',
-    brand: 'Hyundai',
-    model: 'Tucson',
-    year: 2025,
-    price: 489000,
-    mileage: 6000,
-    fuel: 'Petrol',
-    transmission: 'Automatic',
-    condition: 'Used',
-    availability: 'In Stock',
-    color: 'Moonlight Blue',
-    image: 'https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=1200&q=80',
-    description: 'Modern SUV offering comfort, safety technology, and efficient daily driving.',
-    features: [
-      'Smart cruise control',
-      'Wireless Apple CarPlay',
-      'Rear camera',
-      'Multiple airbags'
-    ]
-  }
 ];

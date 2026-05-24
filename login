@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Customer login portal for FIKSPOINT DEALERSHIP.">
+  <title>FIKSPOINT DEALERSHIP | Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="login">
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <span class="brand-mark">FP</span>
+        <span class="brand-font">FIKSPOINT DEALERSHIP</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" data-nav="home" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="listings" href="listings.html">Cars</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="booking" href="service-booking.html">Service Booking</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="about" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="contact" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="login" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="btn btn-sm btn-brand ms-lg-2" href="checkout.html">Purchase</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4 py-lg-5">
+    <section class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="glass-panel p-4 p-lg-5">
+          <p class="small-label mb-1">Customer Portal</p>
+          <h1 class="section-title">Login</h1>
+          <p class="text-muted">Sign in to continue with your purchase request and future service bookings.</p>
+          <div id="loginMessage" class="alert d-none" role="alert"></div>
+          <form id="loginForm" class="row g-3">
+            <div class="col-12">
+              <label for="email" class="form-label">Email Address</label>
+              <input id="email" name="email" type="email" class="form-control" required>
+            </div>
+            <div class="col-12">
+              <label for="password" class="form-label">Password</label>
+              <input id="password" name="password" type="password" class="form-control" required>
+            </div>
+            <div class="col-12 d-flex justify-content-between align-items-center small">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="yes" id="rememberMe" name="rememberMe">
+                <label class="form-check-label" for="rememberMe">Remember me</label>
+              </div>
+              <a href="#" onclick="return false;">Forgot password?</a>
+            </div>
+            <div class="col-12 d-grid">
+              <button type="submit" class="btn btn-brand">Login to Continue</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer py-4 mt-auto">
+    <div class="container d-flex justify-content-between flex-wrap gap-2">
+      <p class="mb-0">Secure customer login for purchase and service requests.</p>
+      <p class="mb-0 small">&copy; <span data-current-year></span> FIKSPOINT DEALERSHIP</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
